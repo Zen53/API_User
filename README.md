@@ -134,10 +134,4 @@ DATABASE_URL="postgresql://user:password@127.0.0.1:5432/api_users?serverVersion=
 | 404 | Ressource non trouvée |
 | 409 | Conflit (email déjà utilisé) |
 
-## Tests avec des outils
 
-Vous pouvez tester l'API avec:
-- **cURL** (ligne de commande)
-- **Postman** (interface graphique)
-- **Insomnia** (interface graphique)
-- **Thunder Client** (extension VS Code)
