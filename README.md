@@ -2,13 +2,13 @@
 
 Une API REST simple construite avec Symfony pour gérer des utilisateurs (CRUD).
 
-## 📋 Prérequis
+##  Prérequis
 
 - PHP >= 8.2
 - Composer
 - Symfony CLI (optionnel mais recommandé)
 
-## 🚀 Installation
+##  Installation
 
 1. **Installer les dépendances**
 ```bash
@@ -28,7 +28,7 @@ symfony server:start
 php -S localhost:8000 -t public
 ```
 
-## 📡 Endpoints de l'API
+##  Endpoints de l'API
 
 | Méthode | URL | Description |
 |---------|-----|-------------|
@@ -38,7 +38,7 @@ php -S localhost:8000 -t public
 | `PUT` | `/api/users/{id}` | Met à jour un utilisateur |
 | `DELETE` | `/api/users/{id}` | Supprime un utilisateur |
 
-## 📝 Exemples d'utilisation
+##  Exemples d'utilisation
 
 ### Créer un utilisateur (POST)
 ```bash
@@ -79,7 +79,7 @@ curl -X PUT http://localhost:8000/api/users/1 \
 curl -X DELETE http://localhost:8000/api/users/1
 ```
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 ├── config/
@@ -105,7 +105,7 @@ curl -X DELETE http://localhost:8000/api/users/1
 └── README.md
 ```
 
-## 🔧 Configuration de la base de données
+## Configuration de la base de données
 
 Par défaut, l'API utilise SQLite. Pour changer de base de données, modifiez la variable `DATABASE_URL` dans le fichier `.env`:
 
@@ -124,7 +124,7 @@ DATABASE_URL="mysql://user:password@127.0.0.1:3306/api_users?serverVersion=8.0"
 DATABASE_URL="postgresql://user:password@127.0.0.1:5432/api_users?serverVersion=15&charset=utf8"
 ```
 
-## 📄 Codes de réponse HTTP
+##  Codes de réponse HTTP
 
 | Code | Signification |
 |------|---------------|
@@ -134,7 +134,7 @@ DATABASE_URL="postgresql://user:password@127.0.0.1:5432/api_users?serverVersion=
 | 404 | Ressource non trouvée |
 | 409 | Conflit (email déjà utilisé) |
 
-## 🧪 Tests avec des outils
+## Tests avec des outils
 
 Vous pouvez tester l'API avec:
 - **cURL** (ligne de commande)
